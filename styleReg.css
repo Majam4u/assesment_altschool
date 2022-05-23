@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+    }
+    
+    body{
+        min-height:100vh;
+        background-color: rgb(171, 170, 170);
+        display:flex;
+        justify-content:center;
+        align-items:center;   
+    }
+
+    .container {
+    /* width:100%; */
+    justify-content:center;
+    align-items:center;
+width:280px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+}
+    

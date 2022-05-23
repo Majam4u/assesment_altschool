@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleReg.css">
+    <title>Register Here</title>
+</head>
+<body class="container">
+        <div>
+            <h2>Registration form</h2>
+            <hr/>
+        </div>
+        
+        <form role="form" action="" class=" form-horizontal container jumbotron" name="regForm">
+            <div class="form-group">
+                <label for="name" class="control-label col-sm-2">Full Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="fullName" maxlength="10" placeholder="Enter name">
+                </div>
+                <span class="col-sm-6" ><p id="errFName" ></p></span>
+             </div>    
+           
+            <div class="form-group">
+                <label for="userName" class="control-label col-sm-2">User Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="userName" maxlength="7" placeholder="Enter user name">
+                </div>
+                 <span class="col-sm-6"><p id="errUName"> </p></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="control-label col-sm-2">E-Mail:</label>
+                <div class="col-sm-4">
+                    <input type="email" class="form-control" name="email" placeholder="someone@mail.com">
+                </div>
+                 <span class="col-sm-6" ><p id="errEmail"> </p></span>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="control-label col-sm-2">Phone No.:</label>
+                <div class="col-sm-4">
+                     <input type="tel" class="form-control" name="phone" placeholder="+234xxxxxxxxxx">
+                </div>
+                <span class="col-sm-6" ><p id="errPhone"> </p></span>
+            </div>
+           
+            <div class="form-group">
+                <label for="pwd" class="control-label col-sm-2">Password:</label>
+                <div class="col-sm-4">
+                    <input type="password" class="form-control" name="password" maxlength="6" placeholder="Enter password">
+                </div>
+                 <span class="col-sm-6" ><p id="errPwd"> </p></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="cnfrmPwd" class="control-label col-sm-2">Confirm Password:</label>
+                <div class="pswd">
+                    <input type="password" class="form-control" name="confirmPassword" maxlength="6" placeholder="Re-type password">
+                </div>
+                 <span class="confirmPswd" ><p id="confirmPwd"> </p></span>
+            </div>
+            
+            <select name="genderType" id="optGender">
+                <option value="">Gender </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            
+            <div class="submit">
+                <input type="submit" value="Submit" class="btn btn-primary btn-lg" onClick="validator()">
+            </div>
+        </form>                                                     
+</body>
+</html>
